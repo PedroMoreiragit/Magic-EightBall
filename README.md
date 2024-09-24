@@ -1,48 +1,48 @@
-# Magic Eight Ball Project
+# Projeto Bola 8 Mágica
 
-This project is a simple implementation of a **Magic Eight Ball** using JavaScript. The program simulates a magic eight ball that answers any yes-or-no question posed by the user.
+Este projeto é uma implementação simples de uma **Bola 8 Mágica** usando JavaScript. O programa simula uma bola mágica que responde a qualquer pergunta de sim ou não feita pelo usuário.
 
-## Description
+## Descrição
 
-The code was created as part of a Codecademy exercise to practice basic JavaScript concepts such as:
-- **Variables**
-- **Conditional (ternary) operators**
-- **Switch statements**
-- **Random number generation**
+O código foi criado como parte de um exercício da Codecademy para praticar conceitos básicos de JavaScript, como:
+- **Variáveis**
+- **Operadores condicionais (ternários)**
+- **Declaração switch**
+- **Geração de números aleatórios**
 
-The program allows the user to input their name and a yes-or-no question. Based on a randomly generated number, the program provides an answer from the magic eight ball.
+O programa permite que o usuário insira seu nome e uma pergunta de sim ou não. Com base em um número gerado aleatoriamente, o programa fornece uma resposta da bola 8 mágica.
 
-## Code Breakdown
+## Detalhamento do Código
 
-1. **User Information**:
-   - The `userName` variable stores the name of the user.
-   - The `userQuestion` stores the question asked by the user.
-   - If a user name is provided, the program greets the user personally, otherwise, it gives a generic greeting.
+1. **Informações do Usuário**:
+   - A variável `userName` armazena o nome do usuário.
+   - A variável `userQuestion` armazena a pergunta feita pelo usuário.
+   - Se um nome for fornecido, o programa cumprimenta o usuário pessoalmente; caso contrário, ele usa uma saudação genérica.
 
-2. **Random Answer Generation**:
-   - A random number between 0 and 7 is generated using `Math.random()` and `Math.floor()`. 
-   - This number is then mapped to one of eight predefined answers using a `switch` statement.
+2. **Geração de Resposta Aleatória**:
+   - Um número aleatório entre 0 e 7 é gerado usando `Math.random()` e `Math.floor()`.
+   - Esse número é então mapeado para uma das oito respostas predefinidas usando uma declaração `switch`.
 
-3. **Eight Ball Responses**:
-   - Depending on the value of `randomNumber`, the `eightBall` variable is set to one of the possible magic eight ball responses:
-     - "It is certain"
-     - "It is decidedly so"
-     - "Reply hazy try again"
-     - "Cannot predict now"
-     - "Do not count on it"
-     - "My sources say no"
-     - "Outlook not so good"
-     - "Signs point to yes"
+3. **Respostas da Bola 8**:
+   - Dependendo do valor de `randomNumber`, a variável `eightBall` é definida com uma das possíveis respostas da bola 8:
+     - "É certo"
+     - "Definitivamente sim"
+     - "Resposta incerta, tente novamente"
+     - "Não posso prever agora"
+     - "Não conte com isso"
+     - "Minhas fontes dizem não"
+     - "As perspectivas não são boas"
+     - "Os sinais apontam que sim"
 
-4. **Output**:
-   - The program prints a greeting and then displays the user's question.
-   - It then provides the answer from the magic eight ball.
+4. **Saída**:
+   - O programa exibe uma saudação e, em seguida, mostra a pergunta do usuário.
+   - Ele então fornece a resposta da bola 8 mágica.
 
-## Example Output
+## Exemplo de Saída
 
-Here’s an example of what the program might output when run:
+Aqui está um exemplo do que o programa pode exibir ao ser executado:
 
 ```bash
-Hello, Pedro!
-Pedro has asked - I'm ugly?
-The magic eight ball says, My sources say no
+Olá, Pedro!
+Pedro perguntou - Eu sou feio?
+A bola 8 mágica disse, Minhas fontes dizem não
